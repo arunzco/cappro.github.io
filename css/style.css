@@ -1,0 +1,356 @@
+
+body {
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    padding: 0;
+    margin: 0;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: 3px;
+    color: #379AEB;
+}
+
+p{
+    margin: 0;
+    font-weight: 400;
+}
+
+a, button {
+    outline: none;
+    text-decoration: none;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+}
+
+ul,li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.hero-banner{
+    width: 100%;
+    min-height: 80vh;
+    padding-top: 173px;
+    position: relative;
+}
+
+.hero-banner::after{
+    content: "";
+    background: url("../img/bg_illustration.png") 0 0 no-repeat;
+    position: absolute;
+    right: 0;
+    top: 0;width: 778px;
+    height: 1074px;
+    z-index: -1;
+}
+
+.hero-banner .banner-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -200px;
+}
+
+.hero-banner .banner-content{
+    position: relative;
+    z-index: 9;
+    margin-top: 100px;
+}
+
+.hero-banner h1{
+    max-width: 710px;
+    font-size: 50px;
+    font-weight: 200;
+    line-height: 70px;
+    text-transform: uppercase;
+    margin-bottom: 70px;
+}
+
+.hero-banner h3{
+    font-size: 41px;
+    text-transform: uppercase;
+    margin-bottom: 29px;
+}
+
+.hero-banner .download a{
+    display: inline-block;
+}
+
+.hero-banner .download a:hover{
+    -webkit-transform: translateY(-5px);
+    -moz-transform: translateY(-5px);
+    transform: translateY(-5px);
+}
+
+.hero-banner .download a:first-child{
+    margin-right: 26px;
+}
+
+.main-sec .bg-frame{
+    position: absolute;
+    z-index: -1;
+}
+
+.main-sec h1{
+    font-size: 30px;
+}
+
+.section-about{
+    padding: 220px 0 92px;
+}
+
+.section-about h1{
+    margin-bottom: 17px;
+}
+
+.section-about p{
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 1px;
+    color: #5C5C5C;
+    margin-bottom: 28px;
+}
+
+.section-about p:last-child{
+    margin-bottom: 0;
+}
+
+.section-about .about-inner, .section-features .features-inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section-features .features-inner{
+    align-items: flex-start;
+}
+
+.section-about .content-sec{
+    max-width: 650px;
+}
+
+.section-about .bg-frame{
+    top: -150px;
+    left: -160px;
+}
+
+.section-features{
+    padding: 110px 0 224px;
+}
+
+.section-features h1{
+    margin-bottom: 40px;
+}
+
+.section-features ul li{
+    position: relative;
+    font-size: 16px;
+    color: #5C5C5C;
+    letter-spacing: 1px;
+    padding-left: 44px;
+    margin-bottom: 26px;
+}
+
+.section-features ul li::before{
+    content: "";
+    width: 16px;
+    height: 16px;
+    border: 2px solid #379AEB;
+    border-radius: 100%;
+    position: absolute;
+    left: 0;
+    top: 5px;
+}
+
+.section-features .bg-frame{
+    top: -140px;
+    right: -80px;
+}
+
+.section-footer{
+    width: 100%;
+    text-align: center;
+    padding: 57px 0;
+    background: #CDE6FA;
+}
+
+.section-footer p{
+    font-size: 14px;
+}
+
+.modal-dialog{
+    max-width: 550px;
+    margin-top: 10%;
+}
+
+.modal-dialog .modal-content{
+    border-radius: 12px;
+}
+
+.modal-header{
+    border: 0;
+    padding: 20px 20px 0 0;
+}
+
+.modal-body{
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+.modal-body .logo{
+    margin-bottom: 40px;
+}
+
+.modal-body .logo img{
+    max-width: 107px;
+}
+
+.modal-body h1{
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+@media only screen and (max-width: 1440px) {
+    .section-features .bg-frame {
+        right: -40px;
+    }
+}
+
+@media only screen and (max-width: 1380px) {
+    .section-about .content-sec {
+        max-width: 560px;
+    }
+}
+
+@media only screen and (max-width: 1180px) {
+    .hero-banner .banner-content {
+        margin-top: 200px;
+    }
+    .hero-banner .banner-img img{
+        max-width: 100%;
+    }
+    .main-sec .img-sec img{
+        max-width: 100%;
+    }
+    .section-features ul li {
+        padding-left: 30px;
+    }
+    .section-features {
+        padding-bottom: 110px;
+    }
+    .section-footer {
+        padding: 30px 0;
+    }
+    .main-sec .bg-frame{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .section-about{
+        padding-top: 110px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .hero-banner::after{
+        content: none;
+    }
+    .hero-banner {
+        padding-top: 50px;
+    }
+    .hero-banner .banner-wrapper {
+        margin-top: 50px;
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-banner .banner-content{
+        order: 2;
+        margin-top: 0;
+        
+    }
+    .hero-banner .banner-img img {
+        max-width: 70%;
+    }
+    .section-about .about-inner, .section-features .features-inner {
+        flex-direction: column;
+        align-items: center;
+    }
+    .main-sec .img-sec img {
+        max-width: 80%;
+    }
+    .main-sec .img-sec{
+        text-align: center;
+    }
+    .section-features .content-sec{
+        order: 2;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    h1, h2{
+        letter-spacing: 1px;
+    }
+    .hero-banner {
+        padding-top: 20px;
+    }
+    .hero-banner .logo{
+        text-align: center;
+    }
+    .hero-banner .logo img{
+        max-width: 127px;
+    }
+    .hero-banner h1{
+        font-size: 35px;
+        line-height: 45px;
+        margin-bottom: 40px;
+    }
+    .hero-banner h3 {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+    .hero-banner .download a:first-child {
+        margin: 0 0 15px;
+    }
+    .hero-banner .download img {
+        max-width: 190px;
+    }
+    .main-sec h1 {
+        font-size: 24px;
+    }
+    .section-about {
+        padding: 80px 15px 40px;
+    }
+    .section-about p {
+        font-size: 14px;
+        line-height: 27px;
+        margin-bottom: 20px;
+    }
+    .section-features {
+        padding: 60px 15px 70px;
+    }
+    .section-features h1 {
+        margin-bottom: 25px;
+    }
+    .section-features ul li {
+        font-size: 14px;
+        padding-left: 26px;
+        margin-bottom: 20px;
+    }
+    .section-footer {
+        padding: 20px 0;
+    }
+    .section-footer p {
+        font-size: 12px;
+    }
+    .main-sec .img-sec img {
+        max-width: 100%;
+    }
+}
