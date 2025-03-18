@@ -184,6 +184,14 @@ ul,li {
     font-size: 14px;
 }
 
+.section-footer a{
+    color: #379AEB;
+}
+
+.section-footer a:hover{
+    text-decoration: underline;
+}
+
 .modal-dialog{
     max-width: 550px;
     margin-top: 10%;
@@ -215,6 +223,69 @@ ul,li {
     font-size: 40px;
     text-transform: uppercase;
     letter-spacing: 1px;
+}
+
+.privacy-header{
+    padding: 20px 40px;
+}
+
+.privacy-header img{
+    max-width: 107px;
+}
+
+.privacy-container{
+    padding: 40px 40px;
+}
+
+.privacy-container h1{
+    font-size: 28px;
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+.privacy-container h2{
+    font-size: 22px;
+    margin: 25px 0 25px;
+    font-weight: 700;
+}
+
+.privacy-container h3{
+    font-size: 18px;
+    margin: 25px 0 10px;
+    font-weight: 700;
+}
+
+.privacy-container a{
+    color: #379AEB;
+}
+
+.privacy-container a:hover{
+    text-decoration: underline;
+}
+
+.privacy-container p{
+    line-height: 28px;
+    margin-bottom: 12px;
+}
+
+.privacy-container ul{
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+.privacy-container ul li{
+    font-size: 15px;
+    line-height: 26px;
+    list-style: disc;
+    margin-bottom: 12px;
+}
+
+.privacy-container ul li:last-child{
+    margin-bottom: 0;
+}
+
+.privacy-container ul li span{
+    font-weight: 700;
 }
 
 @media only screen and (max-width: 1440px) {
@@ -352,5 +423,16 @@ ul,li {
     }
     .main-sec .img-sec img {
         max-width: 100%;
+    }
+    .privacy-container {
+        padding: 25px;
+    }
+    .privacy-container h2 {
+        font-size: 20px;
+        line-height: 28px;
+    }
+    .privacy-container p {
+        font-size: 14px;
+        line-height: 24px;
     }
 }
